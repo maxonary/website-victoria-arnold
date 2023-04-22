@@ -9,11 +9,27 @@ app.get('/', (request, response) => {
 )
 
 app.get('/gallery', (request, response) => {
-    //response.send('View the gallery')
-    const y = `x^2 - 3x + 4`
-    const p = 3
-    const q = 1.5
-    response.send(`PQ-Formula of ${y} is calculated to x=${(-p)/2 + Math.sqrt((p/2)**2 - q)}`)
+    response.send('View the gallery')
+})
+
+app.get('/gallery/:slug', (request, response) => {
+    const requestString = request.params.slug
+    
+    const imageDbFake = [
+    ["chocolate-chip", "Cocolate Chip","A tasty, sugary cookie filled with chocolate chips.", 3.50],
+    ["white-chocolate", "White Chocolate", "A tasty, sugary cookie made of white chocolate.", 3.95], 
+    ["vegan", "Vegan", "A not so tasty, sugary cookie that is based on plant products.", 2.35]
+    ];
+
+    if (imageDbFake.some(arr => arr.includes(requestString)) == true) {
+        const imageData = imageDbFake.find(arr => arr.includes(requestString))
+        const name = imageData[1]
+        const description = imageData[2]
+        const price = imageData[3]
+        response.send(`${name} <br/> ${description}. <br/> It costs $${price}.`)
+    } else {
+        response.send(`An image with the name "${requestString}" could not be found.`)
+    }
 })
 
 app.get('/about', (request, response) => {

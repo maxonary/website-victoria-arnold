@@ -21,7 +21,14 @@ h5,
 h6,
 strong,
 b {
-	color: #222;
+	color: #000000;
+	font-weight: lighter;
+}
+p {
+	color: #464646;
+	font-weight: light;
+	font-size: 14px;
+	padding: 0px;
 }
 a {
 	color: #000000;

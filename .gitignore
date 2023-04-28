@@ -25,3 +25,4 @@ pnpm-debug.log*
 website-victoria-arnold-firebase-adminsdk-k00tx-c19540195e.json
 firebase-debug.log
 multerConfig.js
+.firebase

@@ -6,14 +6,12 @@
 body {
 	font-family: 'Lato', sans-serif;
 	margin: auto;
-	padding: 20px;
-	max-width: 65ch;
 	text-align: left;
 	background-color: #fff;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	color: #444;
+	color: #000000;
 }
 h1,
 h2,

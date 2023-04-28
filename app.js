@@ -3,10 +3,7 @@ import express, { request, response } from "express";
 const app = express()
 const port = 3000
 
-app.get('/', (request, response) => {
-    response.send("Hello World!")
-    }
-)
+app.use(express.static('dist'))
 
 app.get('/gallery', (request, response) => {
     response.send('View the gallery')

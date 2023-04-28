@@ -1,37 +1,27 @@
-# Astro Starter Kit: Blog
+# Gallery App
 
-```
-npm create astro@latest -- --template blog
-```
+This is a simple gallery app that allows users to upload, view, update, and delete images. The app is built using [Express](https://expressjs.com/) and integrates with [Firebase](https://firebase.google.com/) to store and retrieve images. The app also includes some additional routes for an "About" page and a "Contact" page.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
+## Prerequisites
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+To run this app, you will need to have Node.js installed on your machine. You will also need to set up a Firebase project and obtain the Firebase configuration credentials from Maximilian Arnold.
 
+## Installation
 
-![blog](https://user-images.githubusercontent.com/4677417/186189140-4ef17aac-c3c9-4918-a8c2-ce86ba1bb394.png)
+1. Clone this repository to your local machine.
+2. Navigate to the project directory and run `npm install`.
+3. Paste the Firebase configuration credentials into the `firebase.js` file.
+4. Run `npm run build` to build the project.
+5. Run `npm start` to start the server.
+6. Else you can run `npm run dev` to start the server in development mode.
 
-Features:
-
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+## Project Structure
 
 ```
 ├── public/
 ├── src/
 │   ├── components/
 │   ├── content/
-│   ├── layouts/
 │   └── pages/
 ├── astro.config.mjs
 ├── README.md
@@ -47,23 +37,6 @@ The `src/content/` directory contains "collections" of related Markdown and MDX 
 
 Any static assets, like images, can be placed in the `public/` directory.
 
-## 🧞 Commands
+## Deployment
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+This project is automatically deployed to [Firebase](https://firebase.google.com) when merged into master. To deploy manually, run `firebase deploy`.

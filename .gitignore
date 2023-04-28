@@ -19,3 +19,9 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+.vscode
+
+# Firebase files
+website-victoria-arnold-firebase-adminsdk-k00tx-c19540195e.json
+firebase-debug.log
+multerConfig.js

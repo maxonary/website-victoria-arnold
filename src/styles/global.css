@@ -4,7 +4,7 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 body {
-	font-family: Verdana, sans-serif;
+	font-family: 'Lato', sans-serif;
 	margin: auto;
 	padding: 20px;
 	max-width: 65ch;
@@ -26,10 +26,12 @@ b {
 	color: #222;
 }
 a {
-	color: #3273dc;
+	color: #000000;
+	font-weight: lighter;
+	font-size: 15px;
 }
 nav a {
-	margin-right: 10px;
+	margin: 4px 10px 4px 10px;
 }
 textarea {
 	width: 100%;

@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import '../styles/about.css';
 ---
 
 <!DOCTYPE html>
@@ -10,29 +11,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
-			.container {
-				display: flex;
-				justify-content: right;
-				margin-right: 150px;
-			}
-			.content {
-				display: block;
-				text-align: center;
-				position: right;
-				max-width: 560px;
-			}
-			.blocktext {
-				text-align: justify;
-				margin-bottom: 40px;
-			}
-			@media (max-width: 860px) {
-				.container {
-					margin-right: 0px;
-					justify-content: center;
-					margin-left: 40px;
-					margin-right: 40px;
-				}
-			}
+
 		</style>
 	</head>
 

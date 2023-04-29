@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import '../styles/index.css';
 
 const images = [
 	"home/1.jpeg", "home/2.jpg", "home/3.png", "home/4.jpg", "home/5.jpeg", "home/6.jpg", "home/7.jpg", "home/8.png", "home/9.jpg", "home/10.png", "home/11.png", "home/12.jpg"
@@ -13,55 +14,6 @@ const images = [
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			.wrapper {
-				padding: 30px;
-				max-width: 1200px;
-				margin: 0 auto;
-			}
-			.colums {
-				margin: 0 -15px;
-				flex-wrap: wrap;
-				display: flex;
-			}
-			.col {
-				margin: 0 15px 30px;
-				padding: 20px;
-				box-sizing: border-box;
-			}
-			.col-100 {
-				width: calc(100% - 30px);
-			}
-			.col-50 {
-				width: calc(50% - 30px);
-				height: calc(50% - 30px);
-			}
-			.col-33 {
-				width: calc(33.33% - 30px);
-			}
-
-			.col-25 {
-				width: calc(25% - 30px);
-			}
-			@media screen and (max-width: 1000px) {
-				.col-25 {
-					width: calc(50% - 30px);
-				}
-			}
-			@media screen and (max-width: 800px) {
-				.col-50, .col-33, .col-25 {
-					width: calc(100% - 30px);
-				}
-			}
-			.rect-img {
-				object-fit: cover;
-			}
-
-			/* img {
-				width: 550px;
-				height: 550px;
-			} */
-		</style>
 	</head>
 	<body>
 		<Header title={SITE_TITLE} />

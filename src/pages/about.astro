@@ -1,39 +1,22 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/about.css';
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-
-		</style>
-	</head>
-
-	<body>
-			<Header title={SITE_TITLE} />
-			<main>
-				<img src="about/about-me.jpeg" alt="Me" />
-				<div class="container">
-					<div class="content">
-						<h1>About Me</h1>
-						<p class="blocktext">
-							International illustrator, usually working out of Berlin. 
-							Creative thinker by compassion, covering fashion illustration, 
-							magazine and book illustration and also live illustration events. 
-							Analog and digital. Line and colour. Details and simplicity. 
-							Casual and glam. Individual art as well as overall design concept. 
-							Transform complex content into beautiful illustration. 
-							Communicate in English, German, Russian, and Spanish.
-						</p>
-					</div>
-				</div>
-			</main>
-			<Footer />
-	</body>
-</html>
+<BaseLayout>
+	<img src="about/about-me.jpeg" alt="Me" />
+	<div class="container">
+		<div class="content">
+			<h1>About Me</h1>
+			<p class="blocktext">
+				International illustrator, usually working out of Berlin. 
+				Creative thinker by compassion, covering fashion illustration, 
+				magazine and book illustration and also live illustration events. 
+				Analog and digital. Line and colour. Details and simplicity. 
+				Casual and glam. Individual art as well as overall design concept. 
+				Transform complex content into beautiful illustration. 
+				Communicate in English, German, Russian, and Spanish.
+			</p>
+		</div>
+	</div>
+</BaseLayout>

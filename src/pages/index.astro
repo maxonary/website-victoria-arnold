@@ -1,77 +1,63 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/index.css';
 
 const images = [
 	"home/1.jpeg", "home/2.jpg", "home/3.png", "home/4.jpg", "home/5.jpeg", "home/6.jpg", "home/7.jpg", "home/8.png", "home/9.jpg", "home/10.png", "home/11.png", "home/12.jpg"
 ]
 ---
+<BaseLayout>
+	<div class="wrapper">
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<div class="wrapper">
-
-				<div class="colums" style="order: 3;"> 
-					<div class="col col-50">
-						<img class="rect-img" src="home/1.jpeg" alt="Channel Girl!">
-					</div>
-
-					<div class="col col-25">
-						<img class="rect-img" src="home/2.jpg" alt="Hello!">
-					</div>
-
-					<div class="col col-25">
-						<img class="rect-img" src="home/3.jpg" alt="Ink Illustration">
-					</div>
-
-					<div class="col col-33">
-						<img class="rect-img" src="home/4.png" alt="Gendarmenmarkt">
-					</div>
-
-					<div class="col col-25">
-						<img class="rect-img" src="home/5.jpeg" alt="L'Officiel Baltik">
-					</div>
-
-					<div class="col col-25">
-						<img class="rect-img" src="home/6.jpg" alt="Novikov">
-					</div>
-
-					<div class="col col-33">
-						<img class="rect-img" src="home/7.jpg" alt="Monot Dresses">
-					</div>
-
-					<div class="col col-25">
-						<img class="rect-img" src="home/8.png" alt="Hilton Hotel">
-					</div>
-
-					<div class="col col-25">
-						<img class="rect-img" src="home/9.jpg" alt="KaDeWe">
-					</div>
-
-					<div class="col col-50">
-						<img class="rect-img" src="home/10.png" alt="Bvlgari Girl">
-					</div>
-
-					<div class="col col-25">
-						<img class="rect-img" src="home/11.png" alt="Gendarmenmarkt Boutique">
-					</div>
-
-					<div class="col col-25">
-						<img class="rect-img" src="home/12.jpg" alt="Balenciaga Bag">
-					</div>
-
-				</div>
+		<div class="colums" style="order: 3;"> 
+			<div class="col col-50">
+				<img class="rect-img" src="home/1.jpeg" alt="Channel Girl!">
 			</div>
-		</main>
-		<Footer />
-	</body>
-</html>
+
+			<div class="col col-25">
+				<img class="rect-img" src="home/2.jpg" alt="Hello!">
+			</div>
+
+			<div class="col col-25">
+				<img class="rect-img" src="home/3.jpg" alt="Ink Illustration">
+			</div>
+
+			<div class="col col-33">
+				<img class="rect-img" src="home/4.png" alt="Gendarmenmarkt">
+			</div>
+
+			<div class="col col-25">
+				<img class="rect-img" src="home/5.jpeg" alt="L'Officiel Baltik">
+			</div>
+
+			<div class="col col-25">
+				<img class="rect-img" src="home/6.jpg" alt="Novikov">
+			</div>
+
+			<div class="col col-33">
+				<img class="rect-img" src="home/7.jpg" alt="Monot Dresses">
+			</div>
+
+			<div class="col col-25">
+				<img class="rect-img" src="home/8.png" alt="Hilton Hotel">
+			</div>
+
+			<div class="col col-25">
+				<img class="rect-img" src="home/9.jpg" alt="KaDeWe">
+			</div>
+
+			<div class="col col-50">
+				<img class="rect-img" src="home/10.png" alt="Bvlgari Girl">
+			</div>
+
+			<div class="col col-25">
+				<img class="rect-img" src="home/11.png" alt="Gendarmenmarkt Boutique">
+			</div>
+
+			<div class="col col-25">
+				<img class="rect-img" src="home/12.jpg" alt="Balenciaga Bag">
+			</div>
+
+		</div>
+	</div>
+</BaseLayout>
